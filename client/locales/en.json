@@ -1,0 +1,17 @@
+{
+  "global": {
+    "noweb3": "This website utilizes data from the Ethereum blockchain. Please install <a href=\"http://metamask.io\">MetaMask</a> to access it."
+  },
+  "index": {
+    "noweb3": "Please install the MetaMask browser extension, or use a mobile DApp browser (eg. Toshi) to log in.",
+    "title": "WubCoin",
+    "poweredby": "powered by Ethereum",
+    "getmetamask": "Get MetaMask",
+    "login": "Sign in",
+    "pleaseunlock": "Please unlock your MetaMask wallet."
+  },
+  "nav": {
+    "japanese": "日本語",
+    "english": "English"
+  }
+}
