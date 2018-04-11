@@ -1,11 +1,7 @@
 <template>
   <div class="layout">
-    <div>
-      <div v-if="$store.state.noWallet" class="top notification error" v-html="$t('global.noweb3')"></div>
-      <div v-else-if="$store.state.walletNetwork && $store.state.network !== $store.state.walletNetwork" class="top notification error">
-        Warning: Your wallet is on the wrong network. Switch over to the <strong>{{$store.state.network}}</strong> network.
-      </div>
-      <div v-else-if="$store.state.walletLocked" class="top notification error" v-html="$t('global.walletLocked')"></div>
+    <div v-if="$store.state.walletNetwork && $store.state.network !== $store.state.walletNetwork" class="error_overlay">
+      Warning: Your wallet is on the wrong network. Switch over to the <strong>{{$store.state.network}}</strong> network.
     </div>
     <div class="header">
       <div class="wrapper">
@@ -45,7 +41,7 @@
       <div class="wrapper">
         <!-- <nuxt-link :to="path('/')"><img src="~/assets/logo.png" alt="WubCoin" width="200"></nuxt-link> -->
         <div class="copyright">
-          Copyright © <a href="https://stefan.co.jp">Stefan K.K.</a> All Rights Reserved.
+          Hacked together by <a href="https://stefan.co.jp">Stefan K.K.</a> All Rights Reserved.
         </div>
       </div>
     </div>
@@ -135,16 +131,11 @@
     }
   }
 }
-.notification {
+.error_overlay {
   text-align: center;
   padding: 15px;
-  &.error {
-    background: #fdd;
-    border-bottom: 1px solid #fbb;
-  }
-  &.alert {
-    background: #ffd;
-    border-bottom: 1px solid #ffb;
-  }
+  background: #611;
+  border-bottom: 1px solid #811;
+  
 }
 </style>
