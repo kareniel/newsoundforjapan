@@ -2,7 +2,15 @@
   <div class="wrapper">
     <img src="~/assets/more_wub_wub.jpg" alt="WubCoin" class="vinyl">
     <h1>{{ $t('index.title') }}</h1>
-    {{ $t('index.poweredby') }}
+    <div class="block">
+      {{ $t('index.powering') }}
+    </div>
+    <div class="block">
+      {{ $t('index.doyoubelieve') }}
+    </div>
+    <div class="block">
+      COMING SOON.
+    </div>
     <div class="address" v-if="$store.state.address" >
       Wallet address: {{ $store.state.address }}
     </div>
@@ -34,6 +42,9 @@ export default {
 
 
 <style lang="scss">
+.block {
+  margin-bottom: 20px;
+}
 .vinyl {
   width: 50%;
   float: right;

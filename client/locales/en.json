@@ -2,7 +2,8 @@
   "index": {
     "noweb3": "Please install the MetaMask browser extension, or use a mobile DApp browser (eg. Toshi) to log in.",
     "title": "WubCoin",
-    "poweredby": "powered by Ethereum",
+    "powering": "Powering a new generation of music producers, teachers and events.",
+    "doyoubelieve": "Do you believe in the power of the WUB?",
     "getmetamask": "Get MetaMask",
     "login": "Sign in",
     "pleaseunlock": "Please unlock your MetaMask wallet."

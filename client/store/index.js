@@ -6,16 +6,14 @@ const createStore = () => {
   return new Vuex.Store({
     state: {
       user: null,
-      shopContract: null,
       address: null,
       locked: true,
       noWallet: true,
       walletNetwork: null,
       network: process.env.network,
-      pendingTokens: 0,
       locales: ['en', 'ja'],
       locale: 'en',
-      whsBalance: 0
+      wubBalance: 0
     },
 
     mutations: {
@@ -29,14 +27,6 @@ const createStore = () => {
       }
     },
 
-    getters: {
-      tokens (state) {
-        return state.tokens[state.network]
-      },
-      balance (state) {
-        return state.tokens[state.network].WHS.balance
-      }
-    },
 
     actions: {
       async nuxtServerInit ({commit, dispatch, state}, {req, res}) {
@@ -45,35 +35,18 @@ const createStore = () => {
           let locale = (req.headers['accept-language'] || 'en').substr(0, 2)
           if (locale !== 'en' && state.locales.indexOf(locale) !== -1) res.cookie('redirected', 1).redirect('/' + locale + '/').end()
         }
-        state.nftAddress = process.env.nftAddress
-        state.shopAddress = process.env.shopAddress
         if (req.user) {
           commit('SET_USER', req.user)
-          await dispatch('setAddress', req.user.eth_address)
+          await dispatch('setAddress', req.user.address)
         }
       },
 
       async setAddress ({state, commit}, address) {
         state.noWallet = false
         state.address = address
-      },
-
-      async purchaseEthToken ({state, commit}, {symbol, wei}) {
-        if (state.locked) return this.$toast.error('Please unlock your wallet to use this function.')
-        if (typeof web3 === 'undefined') return this.$toast.error('Please install MetaMask to use this function.')
-
-        web3.eth.sendTransaction({value: wei, from: state.address, to: state.tokens[state.network][symbol].address})
-          .catch((err) => {
-            const errs = err.message.split(':')
-            this.$toast.error(errs[errs.length - 1])
-          })
-      },
-
-      async saveUser ({state, commit}, user) {
-        await this.$axios.put('/user', user)
-        state.user = user
-        ladda.stopAll()
-        this.$toast.success('Changes saved')
+        let wubContract = new web3.eth.Contract(ERC20, process.env.wubAddress)
+        let wubBalance = await wubContract.methods.balanceOf(state.address).call()
+        state.wubBalance = wubBalance / 10 ** 18
       },
 
       async login ({state, commit}, {$router, email}) {
@@ -90,7 +63,6 @@ const createStore = () => {
           // $router.replace({path: '/portfolio'})
         } catch (err) {
           const errs = err.message.split(':')
-          this.$toast.error(errs[errs.length - 1])
         }
       },
       async logout ({commit}, router) {
