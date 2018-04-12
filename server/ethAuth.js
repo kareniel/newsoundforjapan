@@ -32,7 +32,7 @@ function install(app) {
   })
 
   app.get('/api/user', async function(req, res) {
-    if (!req.user) return res.status(401).end('Unauthorized')
+    if (!req.user) return res.send({})
     res.send(req.user)
   })
 

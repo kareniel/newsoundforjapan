@@ -35,9 +35,10 @@ const createStore = () => {
           let locale = (req.headers['accept-language'] || 'en').substr(0, 2)
           if (locale !== 'en' && state.locales.indexOf(locale) !== -1) res.cookie('redirected', 1).redirect('/' + locale + '/').end()
         }
-        if (req.user) {
-          commit('SET_USER', req.user)
-          await dispatch('setAddress', req.user.address)
+        let user = await this.$axios.get('/user')
+        if (user.data.address) {
+          commit('SET_USER', user.data)
+          await dispatch('setAddress', user.data.address)
         }
       },
 

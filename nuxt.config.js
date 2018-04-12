@@ -19,7 +19,7 @@ module.exports = {
   env: {
     terms: fs.readFileSync('./terms.txt').toString('hex'),
     network: process.env.ETH_NETWORK || 'rinkeby',
-    wubAddress: process.env.ETH_NETWORK == 'main' ? '0x2a47794f5abd0073fdb499a56321013e027153eb' : '0x8aeaa05dd16c43839176d169d2aa652c40434864'
+    wubAddress: process.env.ETH_NETWORK == 'main' ? '0x1e886ce6D18bF524373a546300dfe97674f5c6d2' : '0x8aeaa05dd16c43839176d169d2aa652c40434864'
   },
   /*
   ** Customize the progress-bar color
@@ -53,7 +53,7 @@ module.exports = {
   srcDir: './client',
   axios: {
     requestInterceptor: (config, context) => {
-      let authorization = (typeof localStorage !== 'undefined' && localStorage.getItem('authorization')) || (context.req && context.req.headers.authorization)
+      let authorization = (typeof localStorage !== 'undefined' && localStorage.getItem('authorization')) || (context.req && context.req.headers.authorization) || (context.req && context.req.cookies.s)
       if (authorization) config.headers.common['Authorization'] = authorization
       return config
     }
