@@ -27,7 +27,7 @@
 
         <div class="brand">
           WubCoin
-          <!-- <nuxt-link :to="path('/')"><img src="~/assets/logo.png" alt="WubCoin" width="200"></nuxt-link> -->
+          <!-- <nuxt-link :to="path('/')"><img src="~/assets/logo.png" alt="Project WUB" width="200"></nuxt-link> -->
           <span v-if="$store.state.network !== 'main'">{{ $store.state.network }}</span>
         </div>
       </div>
@@ -39,9 +39,12 @@
     
     <div class="footer">
       <div class="wrapper">
-        <!-- <nuxt-link :to="path('/')"><img src="~/assets/logo.png" alt="WubCoin" width="200"></nuxt-link> -->
+        <div class="social">
+          <a href="https://github.com/buhrmi/wubcoin.com">GitHub</a>
+        </div>
+        <!-- <nuxt-link :to="path('/')"><img src="~/assets/logo.png" alt="Project WUB" width="200"></nuxt-link> -->
         <div class="copyright">
-          Hacked together by <a href="https://stefan.co.jp">Stefan K.K.</a> All Rights Reserved.
+          In the process of being hacked together by <a href="https://stefan.co.jp">Stefan K.K.</a> All Rights Reserved.
         </div>
       </div>
     </div>
@@ -59,7 +62,7 @@
 }
 .header {
   position: relative;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   padding-top: 10px;
   height: 100px;
   //padding-bottom: 20px;
@@ -119,9 +122,12 @@
   .links {
     margin-top: 20px;
   }
-  .copyright {
+  .copyright, .social {
     padding-top: 60px;
     // text-align: center;
+  }
+  .social {
+    float: right;
   }
   a {
     text-decoration: none;
@@ -130,6 +136,9 @@
 
     }
   }
+}
+h2 {
+  
 }
 .error_overlay {
   text-align: center;

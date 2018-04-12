@@ -5,11 +5,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: "WubCoin",
+    title: "WUB",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "The WUB is powering a new generation of music producers, teachers and events." }
+      { hid: 'description', name: 'description', content: "Project WUB is powering a new generation of music producers, teachers and events." }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
