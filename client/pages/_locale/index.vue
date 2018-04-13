@@ -28,10 +28,10 @@
 
     <h2>ROADMAP</h2>
     <ol>
-      <li>Make WUBs: WUBs are issued on the Ethereum platform to partners via a standard ERC223 contract</li>
-      <li>Sell WUBs: We will reach out to exchanges to list and trade WUBs</li>
+      <li>Issue WUBs: WUBs are issued on the Ethereum platform as a standard ERC223 token</li>
+      <li>Trade WUBs: We will reach out to exchanges to list and trade WUBs</li>
       <li>Organize raves: With the procured funds we will organize electronic dance music raves where WUB holders can attend for free and enjoy free champagne and snacks and have a good time. We will always do our best to book amazing producers and DJs.</li>
-      <li>Platform development: We will also develop an open source DApp where WUBs can be exchanged for music production lessons and gigs from your favourite producers and DJs.</li>
+      <li>Platform development: We will develop an open source DApp where WUBs can be exchanged for music production lessons and gigs from your favourite producers and DJs.</li>
     </ol>
     <h2>TEAM</h2>
     <ul>
@@ -44,11 +44,15 @@
       <a href="https://etherscan.io/address/0x1e886ce6d18bf524373a546300dfe97674f5c6d2#code" target="_blank">0x1e886ce6d18bf524373a546300dfe97674f5c6d2</a>
     </p>
     <p>
-      Note: You can not send Ether to the token contract directly. Stay tuned for the announcement of the token issuance and distribution. Please join our Discord channel to keep in touch.
+      Note: You can not send Ether to the token contract directly. Stay tuned for the announcement of the token issuance and distribution.
     </p>
     <h2>BOUNTY</h2>
     <p>
       We offer ETH rewards for people participating in our community, development and events. Stay tuned for further announcements.
+    </p>
+    <h2>CONTACT</h2>
+    <p>
+      For now, you can find us in <a href="https://discordapp.com/channels/324034794184769537/324034794184769537" target="_blank">Seamless's discord channel</a>.
     </p>
   </div>
 </template>
