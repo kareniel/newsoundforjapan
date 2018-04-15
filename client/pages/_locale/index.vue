@@ -37,7 +37,7 @@
     <ul>
       <li><a href="https://www.linkedin.com/in/stefan-buhrmester-05828b33/" target="_blank">Stefan Buhrmester</a> | Event organizer, Software developer</li>
       <li><a href="http://seamlessr.com" target="_blank">Stephen "SeamlessR" Oleary</a> | Music producer, teacher</li>
-      <li><a href="http://prjd.info">Hikaru Hayama</a> | Marketing, PR</li>
+      <li>More to be announced</li>
     </ul>
     <h2>TOKEN CONTRACT</h2>
     <p>
