@@ -3,7 +3,7 @@
     <img v-if="user.user_image" class="user_image" :src="'/'+user.user_image.path">
     <h1>{{ user.display_name }}</h1>
     <p>{{ $route.params.id }}</p>
-    <p>Reputation: UNKNOWN</p>
+    <p>Reputation: AWESOME</p>
   </div>
 </template>
 

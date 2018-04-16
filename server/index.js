@@ -20,7 +20,7 @@ if (config.dev) {
   builder.build()
 }
 
-const app = require('./app')(config)
+const app = require('./app')
 
 // Install Apache-like logging middleware
 // app.use(require('morgan')('combined'))
