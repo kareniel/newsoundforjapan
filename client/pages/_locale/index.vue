@@ -27,6 +27,9 @@
     </div>
     <h2>LATEST POSTS</h2>
     <p>
+      4/16/2018 7:22 PM | <a href="https://steemit.com/wub/@buhrmi/15-000-000-wubs-have-been-issued" _target="blank">15,000,000 wubs have been issued</a> by buhrmi
+    </p>
+    <p>
       4/16/2018 5:31 PM | <a href="https://steemit.com/wub/@buhrmi/how-do-wubs-get-value" _target="blank">How do WUBs get value</a> by buhrmi
     </p>
     <p>
@@ -44,7 +47,7 @@
       The current plan is as follows:
     </p>
     <ul>
-      <li>Issue a total of 15,000,000 wubs held by Stefan K.K. (completed)</li>
+      <li>Issue a total of 15,000,000 wubs held by Stefan K.K. (<a target="_blank" href="https://etherscan.io/tx/0x4060170d48d1972e10098202bbc5a12cb5a43b8efd3d5d8e014afb9d574482a0">completed</a>)</li>
       <li>Distribute 1,000,000 wubs to partners via airdrops. All partners will be officially announced on our homepage. (TBD)</li>
       <li>Distribute 1,000,000 wubs to the community via a faucet. (TBD)</li>
       <li>Distribute 10,000,000 wubs via an initial wub offering (IWO). (TBD)</li>
