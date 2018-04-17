@@ -88,8 +88,8 @@
     <p>
       Shoot us a mail at <a href="mailto:support@wubcoin.com">support at wubcoin.com</a> or find us in <a href="https://discordapp.com/channels/324034794184769537/324034794184769537" target="_blank">SeamlessR's discord channel</a>.
     </p>
-    <h2>PRESS</h2>
-    <p><i>"This either the stupidest or most amazing thing ever"</i></p>
+    <h2>QUOTES</h2>
+    <p><i>"This is either the stupidest or most amazing thing ever"</i></p>
   </div>
 </template>
 
