@@ -20,8 +20,21 @@
     </div>
     <div class="hero">
       <h1>{{ $t('index.title') }}</h1>
-      <div class="block">
+      <div class="subtitle">
         {{ $t('index.powering') }}
+      </div>
+      <div class="subscribe">
+        <div v-if="subscribed">
+          Thank you. You will soon receive more information.
+        </div>
+        <div v-else>
+          <p>
+            <strong>Be part of the revolution.</strong><br>
+            Enter your email address and receive the latest news. You already know where this is going.
+          </p>
+          <input type="email" v-model="email" placeholder="Enter your email address" @keypress.enter="subscribe">
+          <button @click="subscribe">Notify me</button>
+        </div>
       </div>
       <img src="~/assets/more_wub_wub.jpg" alt="WubCoin" class="vinyl">
     </div>
@@ -30,7 +43,7 @@
       4/16/2018 7:22 PM | <a href="https://steemit.com/wub/@buhrmi/15-000-000-wubs-have-been-issued" _target="blank">15,000,000 wubs have been issued</a> by buhrmi
     </p>
     <p>
-      4/16/2018 5:31 PM | <a href="https://steemit.com/wub/@buhrmi/how-do-wubs-get-value" _target="blank">How do WUBs get value</a> by buhrmi
+      4/16/2018 5:31 PM | <a href="https://steemit.com/wub/@buhrmi/how-do-wubs-get-value" _target="blank">What is the value of a WUB?</a> by buhrmi
     </p>
     <p>
       4/13/2018 4:24 PM | <a href="https://steemit.com/ico/@buhrmi/an-ico-for-people-who-love-music-festivals-and-the-wubs" _target="blank">An ICO for people who love music festivals and the wubs.</a> by buhrmi
@@ -75,21 +88,57 @@
     <p>
       Shoot us a mail at <a href="mailto:support@wubcoin.com">support at wubcoin.com</a> or find us in <a href="https://discordapp.com/channels/324034794184769537/324034794184769537" target="_blank">SeamlessR's discord channel</a>.
     </p>
-    <p><i>"This either the most stupid or the most amazing thing ever"</i></p>
+    <h2>PRESS</h2>
+    <p><i>"This either the stupidest or most amazing thing ever"</i></p>
   </div>
 </template>
 
 
 <script>
 export default {
-  
+  data() {
+    return {
+      subscribed: false,
+      email: ''
+    }
+  },
+  methods: {
+    async subscribe() {
+      await this.$axios.post('/subscribe', {email: this.email, lang: this.$store.state.locale})
+      this.subscribed = true
+    }
+  }
 }
 </script>
 
 
 <style lang="scss">
-.block {
-  margin-bottom: 20px;
+.subscribe {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  font-size: 16px;
+  width: 72%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  input {
+    border: none;
+    background: rgba(255,255,255,1);
+    padding-left: 20px;
+    height: 38px;
+    font-size: 16px;
+    width: 50%;
+    margin-top: 20px;
+  }
+  button {
+    font-size: 16px;
+    padding: 0 12px;
+    height: 38px;
+    border: 1px solid #aaa;
+    background: #eee;
+  }
+}
+.subtitle {
+  margin-bottom: 40px;
 }
 .vinyl {
   width: 100%;
@@ -105,7 +154,7 @@ export default {
 .hero {
   text-align: center;
   h1 {
-    padding-top: 160px;
+    padding-top: 120px;
     font-size: 60px;
   }
   .block {
