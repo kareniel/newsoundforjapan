@@ -40,6 +40,9 @@
     </div>
     <h2>LATEST POSTS</h2>
     <p>
+      4/18/2018 6:18 PM | <a href="https://steemit.com/japan/@buhrmi/on-may-5-come-dance-with-us-at-mount-fuji-in-japan-and-get-some-wubwubs" _target="blank">On May 5, come dance with us at Mount Fuji in Japan and get some wubwubs</a> by buhrmi
+    </p>
+    <p>
       4/16/2018 7:22 PM | <a href="https://steemit.com/wub/@buhrmi/15-000-000-wubs-have-been-issued" _target="blank">15,000,000 wubs have been issued</a> by buhrmi
     </p>
     <p>
