@@ -29,8 +29,8 @@
         </div>
         <div v-else>
           <p>
-            <strong>Be part of the revolution.</strong><br>
-            Enter your email address and receive the latest news. You already know where this is going.
+            <strong>Be part of something awesome.</strong><br>
+            Enter your email address to receive the latest news.
           </p>
           <input type="email" v-model="email" placeholder="Enter your email address" @keypress.enter="subscribe">
           <button @click="subscribe">Notify me</button>
