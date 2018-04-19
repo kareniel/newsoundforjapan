@@ -5,7 +5,7 @@
   "author": "Stefan Buhrmester <buhrmi@gmail.com>",
   "private": true,
   "engines": {
-    "node": "9.8.0",
+    "node": "9.7.1",
     "npm": "5.0.0"
   },
   "scripts": {
