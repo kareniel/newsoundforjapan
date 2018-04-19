@@ -29,11 +29,11 @@
         </div>
         <div v-else>
           <p>
-            <strong>Be part of something awesome.</strong><br>
-            Enter your email address to receive the latest news.
+            <strong>Get free WubCoin!</strong><br>
+            Enter your email address to receive free WubCoin and spam from us.
           </p>
           <input type="email" v-model="email" placeholder="Enter your email address" @keypress.enter="subscribe">
-          <button @click="subscribe">Notify me</button>
+          <button @click="subscribe">OK, send me your spam</button>
         </div>
       </div>
       <img src="~/assets/more_wub_wub.jpg" alt="WubCoin" class="vinyl">

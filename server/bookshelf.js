@@ -1,4 +1,4 @@
-const knexfile = require('./knexfile')
+const knexfile = require('../knexfile')
 
 // Initialize the database
 db = require('knex')(knexfile[process.env.NODE_ENV || 'development'])

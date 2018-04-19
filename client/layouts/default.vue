@@ -19,6 +19,7 @@
         </div>
         <div class="user_area" >
           <div v-if="$store.state.user">
+            <nuxt-link :to="path('/profiles/'+$store.state.address)">My Profile</nuxt-link>
             <a @click="$store.dispatch('logout', $router)">Log out</a>
           </div>
           <div v-else class="logged_out">
@@ -26,8 +27,7 @@
         </div>
 
         <div class="brand">
-          WubCoin
-          <!-- <nuxt-link :to="path('/')"><img src="~/assets/logo.png" alt="Project WUB" width="200"></nuxt-link> -->
+          <nuxt-link :to="path('/')"><img src="~/assets/logo.png" alt="New Sound For Japan" width="340"></nuxt-link>
           <span v-if="$store.state.network !== 'main'">{{ $store.state.network }}</span>
         </div>
       </div>
@@ -108,9 +108,7 @@
     padding: 8px 15px;
   }
   .level1.nuxt-link-active, .nuxt-link-exact-active {
-    border: 1px solid #ddd;
-    border-bottom: none;
-    background: #fcfcfd;
+    box-shadow: inset 0 -4px 0 #F14471;
   }
 }
 .footer {
