@@ -10,7 +10,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: "Crypto-powered music festivals." },
-      { hid: 'og-image', property: 'og-image', content: "https://wubcoin.com/ogimage.png" }
+      { hid: 'og:image', property: 'og:image', content: "https://wubcoin.com/ogimage.png" }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
