@@ -47,6 +47,9 @@
         <div class="copyright">
           In the process of being hacked together by <a href="https://stefan.co.jp">Stefan K.K.</a> All Rights Reserved.
         </div>
+        <div>
+          The DJ Pon-3 character is intellectual property of unaffiliated company <a target="_blank" href="http://hasbro.com">Hasbro, Inc.</a>.
+        </div>
       </div>
     </div>
   </div>
