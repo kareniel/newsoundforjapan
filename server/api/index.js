@@ -2,11 +2,12 @@ const express = require('express')
 const router = express.Router()
 const sigUtil = require('eth-sig-util')
 const fs = require('fs')
+const path = require('path')
 const terms = fs.readFileSync('./terms.txt').toString('hex')
 const Mailchimp = require('mailchimp-api-v3')
 const mailchimp = new Mailchimp(process.env.MAILCHIMP_API_KEY)
 
-const User = require('./../models/user')
+const User = require(path.join(__dirname, '../models/user'))
 
 router.post('/subscribe', async function(req, res) {
   mailchimp.post('/lists/b62e02c4c9/members', {
