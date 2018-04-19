@@ -6,7 +6,7 @@
   "private": true,
   "engines": {
     "node": "9.8.0",
-    "npm": "5.6.0"
+    "npm": "5.0.0"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
