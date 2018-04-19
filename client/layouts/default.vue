@@ -27,7 +27,8 @@
         </div>
 
         <div class="brand">
-          <nuxt-link :to="path('/')"><img src="~/assets/logo.png" alt="New Sound For Japan" width="340"></nuxt-link>
+          <!-- WubCoin -->
+          <nuxt-link :to="path('/')"><img src="~/assets/logo.png" alt="New Sound For Japan" width="190"></nuxt-link>
           <span v-if="$store.state.network !== 'main'">{{ $store.state.network }}</span>
         </div>
       </div>
