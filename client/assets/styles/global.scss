@@ -46,5 +46,27 @@ a {
   background: #F14471;
   border: none;
   display: inline-block;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
   cursor: pointer;
+}
+label {
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 4px;
+}
+input, textarea {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  border-radius: 4px;
+  width: 100%;
+  background: #282c34;
+  padding: 12px;
+  color: white;
+  border-left: 3px solid #F14471;
+  &[disabled] {
+    background-color: #282c34;
+  }
 }

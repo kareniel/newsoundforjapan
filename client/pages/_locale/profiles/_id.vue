@@ -4,6 +4,7 @@
     <h1>{{ user.display_name }}</h1>
     <p>{{ $route.params.id }}</p>
     <p>Reputation: AWESOME</p>
+    <nuxt-link class="button" :to="path('/profile')" v-if="$store.state.user && user.address == $store.state.user.address">Edit</nuxt-link>
   </div>
 </template>
 

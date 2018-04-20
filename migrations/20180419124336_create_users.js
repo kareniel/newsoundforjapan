@@ -11,7 +11,7 @@ exports.up = function(knex, Promise) {
     table.string('email')
     table.string('display_name')
     table.string('website')
-    table.string('user_image_id')
+    table.integer('image_id')
   })
 };
 

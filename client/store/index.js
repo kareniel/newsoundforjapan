@@ -66,6 +66,14 @@ const createStore = () => {
           const errs = err.message.split(':')
         }
       },
+
+      async saveUser ({state, commit}, {$router, user}) {
+        // TODO: validation error messages
+        await this.$axios.put('/user', {user})
+        state.user = user
+        $router.replace({path: '/me'})
+      },
+
       async logout ({commit}, router) {
         commit('SET_USER', null)
         await this.$axios.delete('/session')
