@@ -21,7 +21,7 @@
     <div class="hero">
       <h1>{{ $t('index.title') }}</h1>
       <div class="subtitle">
-        {{ $t('index.powering') }}
+        {{ $t('index.'+powering) }}
       </div>
       <div class="subscribe">
         <div v-if="subscribed">
@@ -104,6 +104,9 @@ export default {
       subscribed: false,
       email: ''
     }
+  },
+  created() {
+    this.powering = 'powering' + Math.floor(Math.random()*8+1)
   },
   methods: {
     async subscribe() {

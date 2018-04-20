@@ -2,8 +2,14 @@
   "index": {
     "noweb3": "Please install the MetaMask browser extension, or use a mobile DApp browser (eg. Toshi) to log in.",
     "title": "Crypto-powered music festivals",
-    "powering": "Yeah, this is happening.",
-    "doyoubelieve": "Do you believe in the power of the WUB?",
+    "powering1": "What else is there to do?",
+    "powering2": "Friendship is magic.",
+    "powering3": "The likes of which you have never seen before.",
+    "powering4": "Anti crypto crypto club",
+    "powering5": "Not affiliated with anything really",
+    "powering6": "Sweet baby jesus",
+    "powering7": "Hallelujah!",
+    "powering8": "Just what the world was waiting for",
     "getmetamask": "Get MetaMask",
     "login": "Sign in",
     "pleaseunlock": "Please unlock your MetaMask wallet."
