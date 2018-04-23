@@ -23,6 +23,8 @@
       <div class="subtitle">
         {{ $t('index.'+powering) }}
       </div>
+      <h2>NEXT EVENT: May 5-6 2018 in Fumotoppara Camping Grounds</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yx72aImMxHE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       <div class="subscribe">
         <div v-if="subscribed">
           Thank you. You will soon receive more information.
@@ -35,10 +37,12 @@
           <input type="email" v-model="email" placeholder="Enter your email address" @keypress.enter="subscribe">
           <button @click="subscribe">OK, send me your spam</button>
         </div>
-      </div>
-      <img src="~/assets/more_wub_wub.jpg" alt="WubCoin" class="vinyl">
+      </div>  
     </div>
     <h2>LATEST POSTS</h2>
+    <p>
+      4/23/2018 6:04 PM | <a href="https://steemit.com/dubstep/@buhrmi/teminite-confirmed-for-our-first-event" _target="blank">Teminite confirmed for our first event</a> by buhrmi
+    </p>
     <p>
       4/18/2018 6:18 PM | <a href="https://steemit.com/japan/@buhrmi/on-may-5-come-dance-with-us-at-mount-fuji-in-japan-and-get-some-wubwubs" _target="blank">On May 5, come dance with us at Mount Fuji in Japan and get some wubwubs</a> by buhrmi
     </p>
@@ -126,6 +130,7 @@ export default {
   width: 72%;
   margin: 0 auto;
   margin-bottom: 40px;
+  margin-top: 30px;
   input {
     border: none;
     background: rgba(255,255,255,1);
@@ -143,9 +148,7 @@ export default {
     background: #eee;
   }
 }
-.subtitle {
-  margin-bottom: 40px;
-}
+
 .vinyl {
   width: 100%;
 }
@@ -162,6 +165,9 @@ export default {
   h1 {
     padding-top: 120px;
     font-size: 60px;
+  }
+  h2 {
+    margin-top: 60px;
   }
   .block {
     margin-bottom: 100px;
