@@ -24,6 +24,7 @@
         {{ $t('index.'+powering) }}
       </div>
       <h2>NEXT EVENT: May 5-6 2018 in Fumotoppara Camping Grounds</h2>
+      <img src="~/assets/events/teminite.png" alt="May 5-6 2018 in Fumotoppara Camping Grounds"><br>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Yx72aImMxHE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       <div class="subscribe">
         <div v-if="subscribed">
