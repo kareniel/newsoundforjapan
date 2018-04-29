@@ -5,7 +5,7 @@ const fs = require('fs')
 const path = require('path')
 const terms = fs.readFileSync('./terms.txt').toString('hex')
 const Mailchimp = require('mailchimp-api-v3')
-const mailchimp = new Mailchimp(process.env.MAILCHIMP_API_KEY)
+const mailchimp = process.env.MAILCHIMP_API_KEY ? new Mailchimp(process.env.MAILCHIMP_API_KEY) : null
 
 const User = require('../models/user')
 
@@ -28,7 +28,7 @@ router.use(async function(req, res, next) {
       return res.status(400).end('Bad Request')
     }
     try {
-      const address = sigUtil.recoverPersonalSignature({data: '0x' + terms, sig})
+      const address = sigUtil.recoverPersonalSignature({data: '0x' + terms, sig}).toLowerCase()
       res.cookie('s', sig, {httpOnly: true})
       let user = await User.where('eth_address', address).fetch({withRelated: ['image']})
       if (!user) user = User.forge('eth_address', address).save()
@@ -44,7 +44,7 @@ router.use(async function(req, res, next) {
 
 
 router.get('/users/:address', async function(req, res) {
-  let user = await User.where('eth_address', req.params.address).fetch({withRelated: ['image']})
+  let user = await User.where('eth_address', String(req.params.address).toLowerCase()).fetch({withRelated: ['image']})
   if (!user) return res.status(404).end()
   delete user.attributes.email
   res.send(user.toJSON())
