@@ -68,7 +68,7 @@
       The current plan is as follows:
     </p>
     <ul>
-      <li>Issue a total of 15,000,000 wubs held by Stefan K.K. (<a target="_blank" href="https://etherscan.io/tx/0x4060170d48d1972e10098202bbc5a12cb5a43b8efd3d5d8e014afb9d574482a0">completed</a>)</li>
+      <li>Issue a total of 15,000,000 wubs held by Stefan K.K. (<a target="_blank" href="https://etherscan.io/tx/0x2664877980f2684c9e9be07a50330e85847c5241">completed</a>)</li>
       <li>Distribute 1,000,000 wubs to partners via airdrops. All partners will be officially announced on our homepage. (TBD)</li>
       <li>Distribute 1,000,000 wubs to the community via a faucet. (TBD)</li>
       <li>Distribute 10,000,000 wubs via an initial wub offering (IWO). (TBD)</li>
@@ -76,7 +76,7 @@
     </ul>
     <h2>TOKEN CONTRACT</h2>
     <p>
-      <a href="https://etherscan.io/address/0x8c5a05b691288f85e6e27bf6b5a454d2814f5a6f#code" target="_blank">0x8c5a05b691288f85e6e27bf6b5a454d2814f5a6f</a>
+      <a href="https://etherscan.io/address/0x2664877980f2684c9e9be07a50330e85847c5241#code" target="_blank">0x2664877980f2684c9e9be07a50330e85847c5241</a>
     </p>
     <p>
       Note: You can not send Ether to the token contract directly. Stay tuned for the announcement of the token issuance and distribution.
@@ -94,7 +94,7 @@
     </p>
     <h2>CONTACT</h2>
     <p>
-      Shoot us a mail at <a href="mailto:support@wubcoin.com">support at wubcoin.com</a> or find us in <a href="https://discordapp.com/channels/324034794184769537/324034794184769537" target="_blank">SeamlessR's discord channel</a>.
+      Shoot us a mail at <a href="mailto:support@wubcoin.com">support at wubcoin.com</a>.
     </p>
     <h2>QUOTES</h2>
     <p><i>"This is either the stupidest or most amazing thing ever"</i></p>
