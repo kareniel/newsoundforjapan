@@ -20,7 +20,7 @@ module.exports = {
   env: {
     terms: fs.readFileSync('./terms.txt').toString('hex'),
     network: process.env.ETH_NETWORK || 'rinkeby',
-    wubAddress: process.env.ETH_NETWORK == 'main' ? '0x8c5a05b691288f85e6e27bf6b5a454d2814f5a6f' : '0x51c36846199738aeccb76bb6b0603f65d1325cd8'
+    wubAddress: process.env.ETH_NETWORK == 'main' ? '0x2664877980f2684c9e9be07a50330e85847c5241' : '0x2664877980f2684c9e9be07a50330e85847c5241'
   },
   /*
   ** Customize the progress-bar color
