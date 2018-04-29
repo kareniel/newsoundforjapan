@@ -1,6 +1,6 @@
-# Wubcoin.com
+# New Sound For Japan
 
-Source code of wubcoin.com
+Crypto-powered music festivals
 
 ## Build Setup
 
