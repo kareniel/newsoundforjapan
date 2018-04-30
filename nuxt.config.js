@@ -9,7 +9,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Crypto-powered music festivals." },
+      { hid: 'description', name: 'description', content: "Blockchain-powered music festivals." },
       { hid: 'og:image', property: 'og:image', content: "https://newsoundforjapan.com/ogimage.png" }
     ],
     link: [

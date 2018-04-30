@@ -8,6 +8,11 @@ exports.up = function(knex, Promise) {
     table.string('mimetype')
     table.string('size')
 
+    table.integer('uploadable_id')
+    table.string('uploadable_type')
+
+    table.index('uploadable_id')
+    table.index('uploadable_type')
     table.index('uploader_id')
     table.index('path')
     table.unique('path')
