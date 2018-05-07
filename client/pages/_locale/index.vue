@@ -23,9 +23,7 @@
       <div class="subtitle">
         {{ $t('index.'+powering) }}
       </div>
-      <h2>NEXT EVENT: May 5-6 2018 in Fumotoppara Camping Grounds</h2>
-      <img src="~/assets/events/teminite.png" alt="May 5-6 2018 in Fumotoppara Camping Grounds"><br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yx72aImMxHE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <h2>NEXT EVENT: TBA</h2>
       <div class="subscribe">
         <div v-if="subscribed">
           Thank you. You will soon receive more information.
@@ -40,6 +38,10 @@
         </div>
       </div>  
     </div>
+    <h2>PAST EVENTS</h2>
+    <h3>May 5-6 2018 Teminite in Fumotoppara Camping Grounds</h3>
+    <img src="~/assets/events/teminite.png" alt="May 5-6 2018 in Fumotoppara Camping Grounds"><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yx72aImMxHE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <h2>LATEST POSTS</h2>
     <p>
       4/23/2018 6:04 PM | <a href="https://steemit.com/dubstep/@buhrmi/teminite-confirmed-for-our-first-event" _target="blank">Teminite confirmed for our first event</a> by buhrmi
