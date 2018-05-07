@@ -50,9 +50,6 @@
       4/18/2018 6:18 PM | <a href="https://steemit.com/japan/@buhrmi/on-may-5-come-dance-with-us-at-mount-fuji-in-japan-and-get-some-wubwubs" _target="blank">On May 5, come dance with us at Mount Fuji in Japan and get some wubwubs</a> by buhrmi
     </p>
     <p>
-      4/16/2018 7:22 PM | <a href="https://steemit.com/wub/@buhrmi/15-000-000-wubs-have-been-issued" _target="blank">15,000,000 wubs have been issued</a> by buhrmi
-    </p>
-    <p>
       4/16/2018 5:31 PM | <a href="https://steemit.com/wub/@buhrmi/how-do-wubs-get-value" _target="blank">What is the value of a WUB?</a> by buhrmi
     </p>
     <p>
@@ -70,7 +67,7 @@
       The current plan is as follows:
     </p>
     <ul>
-      <li>Issue a total of 15,000,000 wubs held by Stefan K.K. (<a target="_blank" href="https://etherscan.io/tx/0x2664877980f2684c9e9be07a50330e85847c5241">completed</a>)</li>
+      <li>Issue a total of 15,000,000 wubs held by Stefan K.K. (<a target="_blank" href="https://etherscan.io/tx/0x3a51ac4aac8e948fe236aa0a050b224f17d7edda95c55c7c7348012e9c496029">completed</a>)</li>
       <li>Distribute 1,000,000 wubs to partners via airdrops. All partners will be officially announced on our homepage. (TBD)</li>
       <li>Distribute 1,000,000 wubs to the community via a faucet. (TBD)</li>
       <li>Distribute 10,000,000 wubs via an initial wub offering (IWO). (TBD)</li>
@@ -78,7 +75,7 @@
     </ul>
     <h2>TOKEN CONTRACT</h2>
     <p>
-      <a href="https://etherscan.io/address/0x2664877980f2684c9e9be07a50330e85847c5241#code" target="_blank">0x2664877980f2684c9e9be07a50330e85847c5241</a>
+      <a href="https://etherscan.io/address/0xded90b4ed5131890809e4f6102d0a8c11a20a246#code" target="_blank">0xded90b4ed5131890809e4f6102d0a8c11a20a246</a>
     </p>
     <p>
       Note: You can not send Ether to the token contract directly. Stay tuned for the announcement of the token issuance and distribution.

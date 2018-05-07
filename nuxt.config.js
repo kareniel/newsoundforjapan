@@ -9,7 +9,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Crypto-powered music festivals." },
+      { hid: 'description', name: 'description', content: "Blockchain-powered music festivals." },
       { hid: 'og:image', property: 'og:image', content: "https://newsoundforjapan.com/ogimage.png" }
     ],
     link: [
@@ -20,7 +20,7 @@ module.exports = {
   env: {
     terms: fs.readFileSync('./terms.txt').toString('hex'),
     network: process.env.ETH_NETWORK || 'rinkeby',
-    wubAddress: process.env.ETH_NETWORK == 'main' ? '0x2664877980f2684c9e9be07a50330e85847c5241' : '0x2664877980f2684c9e9be07a50330e85847c5241'
+    wubAddress: process.env.ETH_NETWORK == 'main' ? '0xded90b4ed5131890809e4f6102d0a8c11a20a246' : '0xded90b4ed5131890809e4f6102d0a8c11a20a246'
   },
   /*
   ** Customize the progress-bar color
